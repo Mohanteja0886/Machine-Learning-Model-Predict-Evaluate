@@ -1,40 +1,122 @@
-Iris Species Classification: Model Comparison and Evaluation
-This project demonstrates a complete machine learning workflow to classify Iris flowers into three species: Setosa, Versicolor, and Virginica. It compares three different algorithms and identifies the key features driving the predictions.
+# Iris Flower Classification using Machine Learning
 
-📋 Project Overview
-The goal was to build a robust classifier using the classic Iris dataset. We performed exploratory data analysis, preprocessed the data, and trained multiple models to evaluate which one performs best on this specific classification task.
+## Project Overview
 
-🛠️ Tech Stack
-Language: Python
-Libraries:
-Data Handling: pandas, numpy
-Machine Learning: scikit-learn
-Visualization: matplotlib, seaborn
-🚀 Workflow
-Data Loading: Utilized the load_iris dataset from Scikit-Learn.
-Preprocessing: Verified data quality (no missing values) and split the data into 80% training and 20% testing sets.
-Model Training: Trained three distinct models:
-Logistic Regression
-K-Nearest Neighbors (KNN)
-Random Forest Classifier
-Evaluation: Evaluated models using Accuracy, Precision, Recall, and F1-Score.
-Feature Importance: Analyzed which physical traits of the flowers were most indicative of the species.
-📊 Results & Insights
-Model Comparison
-All three models achieved exceptionally high performance on this dataset:
+This project builds and evaluates multiple Machine Learning models to classify Iris flower species using the famous Iris dataset. The objective is to compare different classification algorithms and identify the best-performing model based on evaluation metrics.
 
-Model	Accuracy	Precision	Recall	F1 Score
-Logistic Regression	1.0	1.0	1.0	1.0
-KNN	1.0	1.0	1.0	1.0
-Random Forest	1.0	1.0	1.0	1.0
-Best Model: Random Forest
-While all models performed perfectly, Random Forest was selected as the final model due to its ensemble nature, which typically offers better generalization on more complex datasets.
+## Dataset
 
-Feature Importance
-The analysis revealed that petal characteristics are far more important than sepal characteristics for classification:
+Source: Scikit-Learn Iris Dataset
 
-Petal Length (cm): ~44% importance
-Petal Width (cm): ~42% importance
-Sepal Measurements: <14% combined importance
-🏁 Conclusion
-The project successfully classified Iris species with 100% accuracy on the test set. The results confirm that petal dimensions are the primary distinguishing features for these species. This workflow provides a solid foundation for more complex multi-class classification problems.
+Dataset Information:
+
+* Total Samples: 150
+* Features: 4
+
+  * Sepal Length
+  * Sepal Width
+  * Petal Length
+  * Petal Width
+* Target Classes:
+
+  * Setosa
+  * Versicolor
+  * Virginica
+
+## Problem Statement
+
+Predict the species of an Iris flower based on its physical measurements and compare multiple Machine Learning algorithms to determine the most accurate classifier.
+
+## Project Workflow
+
+### 1. Data Loading and Exploration
+
+* Loaded the Iris dataset
+* Created a Pandas DataFrame
+* Explored dataset statistics
+* Checked class distribution
+* Verified missing values
+
+### 2. Data Preprocessing
+
+* Checked for missing values
+* Verified data quality
+* Split dataset into training and testing sets (80:20)
+
+### 3. Feature Engineering
+
+* Performed feature importance analysis
+* Identified the most influential features
+* Analyzed relationships among variables
+
+### 4. Model Training
+
+The following Machine Learning algorithms were trained:
+
+1. Logistic Regression
+2. K-Nearest Neighbors (KNN)
+3. Random Forest Classifier
+
+### 5. Model Evaluation
+
+Models were evaluated using:
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+
+A comparison table was created to compare model performance.
+
+### 6. Best Model Analysis
+
+The best-performing model was selected based on evaluation metrics.
+
+Additional analysis included:
+
+* Confusion Matrix
+* Feature Importance Visualization
+* Performance Interpretation
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-Learn
+
+## Results
+
+The machine learning models achieved excellent classification performance on the Iris dataset.
+
+Key observations:
+
+* Random Forest achieved the highest overall performance.
+* Petal Length and Petal Width were the most important features.
+* The dataset is highly separable, resulting in very high accuracy across all models.
+
+## Conclusion
+
+1. Three classification models were successfully trained and evaluated.
+2. Random Forest delivered the best overall performance.
+3. Petal Length and Petal Width were the most influential features.
+4. The Iris dataset is highly suitable for classification tasks.
+5. Random Forest was selected as the final model due to its accuracy and robustness.
+
+## Project Structure
+
+├── Iris_Classification_ML_Project.ipynb
+├── Dataset
+├── Model Evaluation Results
+├── Confusion Matrix
+└── README.md
+
+## Author
+
+Mohan Teja Parim
+
+## Internship
+
+Pluto Academy AI & ML Internship Program
